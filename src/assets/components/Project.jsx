@@ -14,6 +14,22 @@ import {
   BookOpen,
 } from 'lucide-react'
 
+// Asset imports
+// Asset imports
+import lumioImage from '../Image/lumio.png'
+import lumioVideo from '../Videos/lumio.mp4'
+
+import imparicalImage from '../Image/Imaprical.png'
+import imparicalVideo from '../Videos/imparical.mp4'
+
+import dailyLoopImage from '../Image/dailyloop.png'
+import dailyLoopVideo from '../Videos/Daily Loop.mp4'
+
+import freelioImage from '../Image/Freelio.png'
+import freelioVideo from '../Videos/Freelio.mp4'
+
+import ironCoreImage from '../Image/ironcore.png'
+import ironCoreVideo from '../Videos/iron core.mp4'
 /* ==========================================================================
    1. Data (unchanged)
    ========================================================================== */
@@ -29,9 +45,9 @@ const primaryProjects = [
     coverBg: 'bg-emerald-950/80 dark:bg-[#15231c]',
     borderColor: 'border-emerald-500/40',
     accentColor: 'text-emerald-600 dark:text-emerald-400',
-    coverImage: 'src/assets/Image/lumio.png',
-    videoUrl: 'src/assets/Videos/lumio.mp4',
-    posterImage: '/images/lumia-cover.jpg',
+    coverImage: lumioImage,
+    videoUrl: lumioVideo,
+    posterImage: lumioImage,
     overview:
       'An interactive mobile application delivering daily motivation across 10 curated life categories with custom bookmarking and quote exports.',
     keyFeatures: [
@@ -44,6 +60,7 @@ const primaryProjects = [
     liveUrl: 'https://github.com/tatheer-sabir/Lumio',
     githubUrl: 'https://github.com/tatheer-sabir/Lumio',
   },
+
   {
     id: 'commission-ai',
     indexStr: '02',
@@ -54,9 +71,9 @@ const primaryProjects = [
     coverBg: 'bg-slate-900/80 dark:bg-[#1e293b]',
     borderColor: 'border-blue-500/40',
     accentColor: 'text-sky-600 dark:text-sky-400',
-    coverImage: 'src/assets/Image/Imaprical.png',
-    videoUrl: 'src/assets/Videos/imparical.mp4',
-    posterImage: '/images/commission-ai-cover.jpg',
+    coverImage: imparicalImage,
+    videoUrl: imparicalVideo,
+    posterImage: imparicalImage,
     overview:
       'Fully automated story-generation, video rendering, and YouTube publishing engine built to run hands-free content pipelines.',
     keyFeatures: [
@@ -69,6 +86,7 @@ const primaryProjects = [
     liveUrl: 'https://www.youtube.com/@ImperialRebirthTales-m9f',
     githubUrl: 'https://github.com/tatheer-sabir/imperial-Ai',
   },
+
   {
     id: 'daily-loop',
     indexStr: '03',
@@ -79,9 +97,9 @@ const primaryProjects = [
     coverBg: 'bg-orange-950/80 dark:bg-[#2a1b18]',
     borderColor: 'border-orange-500/40',
     accentColor: 'text-orange-600 dark:text-orange-400',
-    coverImage: 'src/assets/Image/dailyloop.png',
-    videoUrl: 'src/assets/Videos/Daily Loop.mp4',
-    posterImage: '/images/daily-loop-cover.jpg',
+    coverImage: dailyLoopImage,
+    videoUrl: dailyLoopVideo,
+    posterImage: dailyLoopImage,
     overview:
       'Aggregates feeds across 10 website categories, runs AI summarization on news items, and delivers personalized email newsletters.',
     keyFeatures: [
@@ -94,6 +112,7 @@ const primaryProjects = [
     liveUrl: 'https://thedailyloop.vercel.app/',
     githubUrl: 'https://github.com/thedailyloopteam-beep/thedailyloop',
   },
+
   {
     id: 'freelio',
     indexStr: '04',
@@ -104,9 +123,9 @@ const primaryProjects = [
     coverBg: 'bg-purple-950/80 dark:bg-[#221c35]',
     borderColor: 'border-purple-500/40',
     accentColor: 'text-purple-600 dark:text-purple-400',
-    coverImage: 'src/assets/Image/Freelio.png',
-    videoUrl: 'src/assets/Videos/Freelio.mp4',
-    posterImage: '/images/freelio-cover.jpg',
+    coverImage: freelioImage,
+    videoUrl: freelioVideo,
+    posterImage: freelioImage,
     overview:
       'Productivity and financial management tool engineered for freelancers to track ongoing client deliverables and net earnings.',
     keyFeatures: [
@@ -119,6 +138,7 @@ const primaryProjects = [
     liveUrl: 'https://github.com/tatheer-sabir/freelio',
     githubUrl: 'https://github.com/tatheer-sabir/freelio',
   },
+
   {
     id: 'nexus-studio',
     indexStr: '05',
@@ -129,9 +149,9 @@ const primaryProjects = [
     coverBg: 'bg-rose-950/80 dark:bg-[#2d1218]',
     borderColor: 'border-rose-500/40',
     accentColor: 'text-rose-600 dark:text-rose-400',
-    coverImage: 'src/assets/Image/ironcore.png',
-    videoUrl: 'src/assets/Videos/iron core.mp4',
-    posterImage: '/images/nexus-cover.jpg',
+    coverImage: ironCoreImage,
+    videoUrl: ironCoreVideo,
+    posterImage: ironCoreImage,
     overview:
       'A high-impact fitness landing page built to convert visitors into gym members, with bold typography, smooth scroll animations, and a fully responsive layout across devices.',
     keyFeatures: [
@@ -156,13 +176,15 @@ function MediaFrame({ project }) {
   if (isMobile) {
     return (
       <div className="flex items-center justify-center py-2">
-        <div className="relative w-[150px] rounded-[28px]
+        <div
+          className="relative w-[150px] rounded-[28px]
                         bg-gradient-to-b from-[#33333A] to-[#1A1A1E]
                         p-[10px]
                         shadow-[0_20px_45px_rgba(0,0,0,0.35)]
                         dark:from-[#2b2d33] dark:to-[#0A0A0C]
                         dark:shadow-[0_20px_45px_rgba(0,0,0,0.6),inset_0_0_0_1px_rgba(255,255,255,0.05)]
-                        sm:w-[170px]">
+                        sm:w-[170px]"
+        >
           <div className="absolute -right-[2px] top-[70px] h-10 w-[2px] rounded bg-[#2A2A30] dark:bg-[#1c1d21]" />
           <div className="absolute -left-[2px] top-[60px] h-6 w-[2px] rounded bg-[#2A2A30] dark:bg-[#1c1d21]" />
           <div className="absolute -left-[2px] top-[90px] h-6 w-[2px] rounded bg-[#2A2A30] dark:bg-[#1c1d21]" />
@@ -177,6 +199,7 @@ function MediaFrame({ project }) {
               playsInline
               className="h-full w-full object-cover opacity-90"
             />
+
             <div className="absolute left-1/2 top-2 h-2 w-2 -translate-x-1/2 rounded-full bg-black shadow-[inset_0_0_0_1px_rgba(255,255,255,0.08)]" />
           </div>
         </div>
@@ -186,20 +209,27 @@ function MediaFrame({ project }) {
 
   return (
     <div className="flex flex-col items-center py-2">
-      <div className="w-full overflow-hidden rounded-t-lg border border-b-0
+      <div
+        className="w-full overflow-hidden rounded-t-lg border border-b-0
                       border-black/[0.08] bg-[#F4F1EA]
                       shadow-[0_20px_45px_-20px_rgba(0,0,0,0.35)]
-                      dark:border-white/[0.06] dark:bg-[#1b1d24]">
-        <div className="flex items-center gap-2 border-b
+                      dark:border-white/[0.06] dark:bg-[#1b1d24]"
+      >
+        <div
+          className="flex items-center gap-2 border-b
                         border-black/[0.06] bg-[#EDE9DF] px-3 py-2
-                        dark:border-white/[0.06] dark:bg-[#22242c]">
+                        dark:border-white/[0.06] dark:bg-[#22242c]"
+        >
           <span className="h-2.5 w-2.5 rounded-full bg-[#33333A]" />
           <span className="h-2.5 w-2.5 rounded-full bg-[#33333A]" />
           <span className="h-2.5 w-2.5 rounded-full bg-[#33333A]" />
-          <div className="ml-2 flex-1 truncate rounded-full
+
+          <div
+            className="ml-2 flex-1 truncate rounded-full
                           border border-black/[0.06] bg-white px-3 py-1
                           text-center font-mono text-[9px] text-[#5A5A5A]
-                          dark:border-white/[0.06] dark:bg-[#14151b] dark:text-[#9A9A9E]">
+                          dark:border-white/[0.06] dark:bg-[#14151b] dark:text-[#9A9A9E]"
+          >
             {project.title.toLowerCase().replace(/\s+/g, '-')}.app
           </div>
         </div>
@@ -217,10 +247,13 @@ function MediaFrame({ project }) {
         </div>
       </div>
 
-      <div className="h-2 w-[92%] rounded-b-md
+      <div
+        className="h-2 w-[92%] rounded-b-md
                       bg-gradient-to-b from-[#B8B0A0] to-[#E5DFD0]
                       shadow-lg
-                      dark:from-[#3a3d47] dark:to-[#1b1d24]" />
+                      dark:from-[#3a3d47] dark:to-[#1b1d24]"
+      />
+
       <div className="h-[3px] w-[40%] rounded-b-sm bg-[#6E6A63] dark:bg-[#0e0f13]" />
     </div>
   )
@@ -229,12 +262,10 @@ function MediaFrame({ project }) {
 function OvalBookCard({ project, activeIndex, index, onSelect, onOpen }) {
   const offset = index - activeIndex
   const isCenter = offset === 0
-
   const absOffset = Math.abs(offset)
   const xTranslation = offset * 110
   const yTranslation = Math.pow(absOffset, 1.8) * 12
   const zIndex = 30 - absOffset * 5
-
   const scale = isCenter ? 1.15 : Math.max(0.75, 1 - absOffset * 0.12)
   const opacity = isCenter ? 1 : Math.max(0.4, 0.95 - absOffset * 0.2)
 
@@ -262,15 +293,19 @@ function OvalBookCard({ project, activeIndex, index, onSelect, onOpen }) {
     >
       <div className="absolute top-0 bottom-0 left-0 z-20 w-3 rounded-l-sm bg-gradient-to-r from-black/60 via-white/10 to-transparent" />
       <div className="absolute top-0 bottom-0 left-1 z-20 w-[1px] bg-white/20" />
-
-      <div className={`absolute inset-0 rounded-r-md ${project.coverBg}`} />
+      <div
+        className={`absolute inset-0 rounded-r-md ${project.coverBg}`}
+      />
 
       <div className="relative z-10 flex h-full flex-col justify-between p-3.5 text-white">
         <div className="flex items-center justify-between border-b border-white/20 pb-2">
           <span className="font-mono text-[10px] font-semibold tracking-wider text-white/60 sm:text-[11px]">
             {project.indexStr}
           </span>
-          <Compass className={`h-3 w-3 sm:h-3.5 sm:w-3.5 ${project.accentColor}`} />
+
+          <Compass
+            className={`h-3 w-3 sm:h-3.5 sm:w-3.5 ${project.accentColor}`}
+          />
         </div>
 
         <div className="my-auto space-y-2 sm:space-y-3">
@@ -280,6 +315,7 @@ function OvalBookCard({ project, activeIndex, index, onSelect, onOpen }) {
               alt={project.title}
               className="h-full w-full object-cover opacity-90 transition-opacity"
             />
+
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
           </div>
 
@@ -287,6 +323,7 @@ function OvalBookCard({ project, activeIndex, index, onSelect, onOpen }) {
             <h3 className="font-serif text-sm font-bold tracking-wide text-white sm:text-base">
               {project.title}
             </h3>
+
             <p className="line-clamp-1 font-sans text-[9px] text-white/60 sm:text-[10px]">
               {project.subtitle}
             </p>
@@ -295,6 +332,7 @@ function OvalBookCard({ project, activeIndex, index, onSelect, onOpen }) {
 
         <div className="flex items-center justify-between border-t border-white/20 pt-2 font-mono text-[9px] text-white/60 sm:text-[10px]">
           <span>{project.category}</span>
+
           <span className="flex items-center gap-1 font-semibold text-[var(--gold-soft,#E8CE94)]">
             {isCenter ? 'Open' : 'Select'}{' '}
             <Play className="h-2 w-2 fill-[var(--gold-soft,#E8CE94)] sm:h-2.5 sm:w-2.5" />
@@ -325,22 +363,22 @@ function OpenBookModal({ project, onClose, onNext, onPrev }) {
         className="relative flex w-full max-w-5xl flex-col items-center"
       >
         {/* Header bar — label only, no close button */}
-        <div className="mb-3 flex w-full items-center px-2 font-mono text-xs
-                        text-[#5A5A5A] dark:text-[#9A9A9E]">
+        <div
+          className="mb-3 flex w-full items-center px-2 font-mono text-xs
+                        text-[#5A5A5A] dark:text-[#9A9A9E]"
+        >
           <div className="flex items-center gap-2">
             <BookOpen className="h-4 w-4 animate-pulse text-[var(--gold)]" />
+
             <span className="font-bold uppercase tracking-wider text-[var(--gold)]">
               Volume {project.indexStr} // Archive Codex
             </span>
           </div>
         </div>
 
-        {/* BOOK + SIDE CLOSE BUTTON WRAPPER
-            The close button is absolutely positioned to the right edge of
-            this wrapper, vertically centered. It never scrolls away. */}
+        {/* BOOK + SIDE CLOSE BUTTON WRAPPER */}
         <div className="relative w-full">
-
-          {/* SIDE CLOSE BUTTON — pinned to right edge of the book, centered */}
+          {/* SIDE CLOSE BUTTON */}
           <button
             onClick={(e) => {
               e.stopPropagation()
@@ -366,13 +404,16 @@ function OpenBookModal({ project, onClose, onNext, onPrev }) {
             >
               <X className="h-5 w-5" />
             </span>
-            <span className="rotate-180 font-mono text-[9px] uppercase tracking-[0.2em] text-[var(--gold)]/70"
-                  style={{ writingMode: 'vertical-rl' }}>
+
+            <span
+              className="rotate-180 font-mono text-[9px] uppercase tracking-[0.2em] text-[var(--gold)]/70"
+              style={{ writingMode: 'vertical-rl' }}
+            >
               Close
             </span>
           </button>
 
-          {/* MOBILE CLOSE BUTTON — top-right corner of the book */}
+          {/* MOBILE CLOSE BUTTON */}
           <button
             onClick={(e) => {
               e.stopPropagation()
@@ -407,6 +448,7 @@ function OpenBookModal({ project, onClose, onNext, onPrev }) {
           >
             {/* Spine crease */}
             <div className="pointer-events-none absolute inset-y-0 left-1/2 z-40 hidden w-12 -translate-x-1/2 bg-gradient-to-r from-black/10 via-black/[0.03] to-black/10 dark:from-black/70 dark:via-black/20 dark:to-black/70 lg:block" />
+
             <div className="pointer-events-none absolute inset-y-0 left-1/2 z-50 hidden w-[2px] -translate-x-1/2 bg-[var(--gold)]/30 lg:block" />
 
             {/* Ribbon bookmark */}
@@ -425,12 +467,11 @@ function OpenBookModal({ project, onClose, onNext, onPrev }) {
             >
               <div className="pointer-events-none absolute inset-0 bg-radial from-[var(--gold)]/[0.04] to-transparent" />
 
-              <div className="relative z-10 flex items-center justify-between border-b
-                              border-black/[0.06] pb-3 font-mono text-[11px]
-                              dark:border-white/[0.06]">
+              <div className="relative z-10 flex items-center justify-between border-b border-black/[0.06] pb-3 font-mono text-[11px] dark:border-white/[0.06]">
                 <span className="font-semibold uppercase tracking-widest text-[var(--gold)]">
                   [ Visual Demo Recording ]
                 </span>
+
                 <span className="text-[#9A958A] dark:text-[#6E6A63]">
                   Page L-{project.indexStr}
                 </span>
@@ -439,11 +480,14 @@ function OpenBookModal({ project, onClose, onNext, onPrev }) {
               <div className="relative z-10 my-4 flex justify-center">
                 <MediaFrame project={project} />
               </div>
+
               <div className="relative z-10 -mt-2 mb-2 flex justify-center">
-                <span className="flex items-center gap-1.5 rounded-md border
+                <span
+                  className="flex items-center gap-1.5 rounded-md border
                                  border-[var(--gold)]/25 bg-white/85 px-2.5 py-1
                                  font-mono text-[10px] text-[var(--gold)] shadow-sm
-                                 backdrop-blur-md dark:bg-black/60">
+                                 backdrop-blur-md dark:bg-black/60"
+                >
                   <Play className="h-2.5 w-2.5 fill-[var(--gold)]" />
                   Interactive Runtime Showcase
                 </span>
@@ -471,12 +515,11 @@ function OpenBookModal({ project, onClose, onNext, onPrev }) {
               <div className="pointer-events-none absolute inset-0 bg-radial from-[var(--gold)]/[0.04] to-transparent" />
 
               <div className="relative z-10 space-y-4">
-                <div className="flex items-center justify-between border-b
-                                border-black/[0.06] pb-3 font-mono text-[11px]
-                                dark:border-white/[0.06]">
+                <div className="flex items-center justify-between border-b border-black/[0.06] pb-3 font-mono text-[11px] dark:border-white/[0.06]">
                   <span className="uppercase tracking-widest text-[#5A5A5A] dark:text-[#9A9A9E]">
                     Category: {project.category}
                   </span>
+
                   <span className="text-[#9A958A] dark:text-[#6E6A63]">
                     Page R-{project.indexStr}
                   </span>
@@ -486,10 +529,12 @@ function OpenBookModal({ project, onClose, onNext, onPrev }) {
                   <h2 className="font-serif text-2xl font-bold tracking-tight text-[var(--ink)] dark:text-[#F2F1EE] sm:text-3xl">
                     {project.title}
                   </h2>
+
                   <div className="mt-2 font-sans text-xs leading-relaxed text-[#5A5A5A] dark:text-[#9A9A9E] sm:text-sm">
                     <span className="float-left pr-2 pt-0.5 font-serif text-3xl font-black leading-none text-[var(--gold)]">
                       {project.overview.charAt(0)}
                     </span>
+
                     {project.overview.slice(1)}
                   </div>
                 </div>
@@ -498,6 +543,7 @@ function OpenBookModal({ project, onClose, onNext, onPrev }) {
                   <h4 className="font-mono text-[10px] font-bold uppercase tracking-wider text-[var(--gold)]">
                     Core Architecture Features
                   </h4>
+
                   <ul className="grid grid-cols-1 gap-1.5">
                     {project.keyFeatures.map((feat, idx) => (
                       <li
@@ -515,6 +561,7 @@ function OpenBookModal({ project, onClose, onNext, onPrev }) {
                   <h4 className="mb-2 font-mono text-[10px] font-bold uppercase tracking-wider text-[#5A5A5A] dark:text-[#9A9A9E]">
                     Engineered With
                   </h4>
+
                   <div className="flex flex-wrap gap-1.5">
                     {project.techStack.map((tech, idx) => (
                       <span
@@ -529,8 +576,7 @@ function OpenBookModal({ project, onClose, onNext, onPrev }) {
                 </div>
               </div>
 
-              <div className="relative z-10 mt-6 flex flex-wrap items-center gap-3 border-t
-                              border-black/[0.06] pt-4 dark:border-white/[0.06]">
+              <div className="relative z-10 mt-6 flex flex-wrap items-center gap-3 border-t border-black/[0.06] pt-4 dark:border-white/[0.06]">
                 {project.liveUrl && (
                   <a
                     href={project.liveUrl}
@@ -549,7 +595,9 @@ function OpenBookModal({ project, onClose, onNext, onPrev }) {
                       className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/40 to-transparent
                                  transition-transform duration-1000 ease-out group-hover:translate-x-full"
                     />
+
                     <ExternalLink className="relative h-3.5 w-3.5" />
+
                     <span className="relative">Launch Application</span>
                   </a>
                 )}
@@ -585,7 +633,9 @@ function OpenBookModal({ project, onClose, onNext, onPrev }) {
           >
             <ChevronLeft className="h-4 w-4" /> Previous Book
           </button>
+
           <span className="text-[#B8B0A0] dark:text-[#3A3850]">|</span>
+
           <button
             onClick={onNext}
             className="flex items-center gap-1.5 transition-colors duration-500 hover:text-[var(--gold)]
@@ -606,12 +656,9 @@ function OpenBookModal({ project, onClose, onNext, onPrev }) {
 export default function Projects() {
   const [activeIndex, setActiveIndex] = useState(2)
   const [isOpenModal, setIsOpenModal] = useState(false)
-
   const shelfRef = useRef(null)
-
   const wheelLockRef = useRef(false)
   const wheelResetTimeoutRef = useRef(null)
-
   const activeProject = primaryProjects[activeIndex]
 
   const handleNext = () => {
@@ -629,6 +676,7 @@ export default function Projects() {
     if (isOpenModal) {
       const prev = document.body.style.overflow
       document.body.style.overflow = 'hidden'
+
       return () => {
         document.body.style.overflow = prev
       }
@@ -657,13 +705,17 @@ export default function Projects() {
       }
 
       wheelLockRef.current = true
+
       clearTimeout(wheelResetTimeoutRef.current)
+
       wheelResetTimeoutRef.current = setTimeout(() => {
         wheelLockRef.current = false
       }, 450)
     }
 
-    shelfElement.addEventListener('wheel', handleShelfWheel, { passive: false })
+    shelfElement.addEventListener('wheel', handleShelfWheel, {
+      passive: false,
+    })
 
     return () => {
       shelfElement.removeEventListener('wheel', handleShelfWheel)
@@ -684,10 +736,12 @@ export default function Projects() {
       <div className="mx-auto w-full max-w-6xl space-y-12">
         {/* Section Title */}
         <div className="space-y-3 text-center sm:text-left">
-          <div className="inline-flex items-center gap-2 rounded-full
+          <div
+            className="inline-flex items-center gap-2 rounded-full
                           border border-[var(--gold)]/30 bg-[var(--gold)]/[0.06]
                           px-3 py-1 font-mono text-[10px] uppercase tracking-[0.2em]
-                          text-[var(--gold)]">
+                          text-[var(--gold)]"
+          >
             <Sparkles className="h-3.5 w-3.5" />
             <span>Project Shelf Codex</span>
           </div>
@@ -704,12 +758,14 @@ export default function Projects() {
         </div>
 
         {/* 3D Bookshelf */}
-        <div className="relative rounded-2xl border border-[var(--gold)]/20
+        <div
+          className="relative rounded-2xl border border-[var(--gold)]/20
                         bg-white p-4
                         shadow-[0_30px_80px_-40px_rgba(90,70,30,0.35),0_1px_0_rgba(255,255,255,0.9)_inset]
                         dark:border-[var(--gold)]/20 dark:bg-[#14131A]
                         dark:shadow-[0_30px_80px_-40px_rgba(0,0,0,0.7),0_1px_0_rgba(255,255,255,0.05)_inset]
-                        sm:p-8">
+                        sm:p-8"
+        >
           {/* Arrows */}
           <button
             onClick={handlePrev}
@@ -762,28 +818,37 @@ export default function Projects() {
 
           {/* Curved base */}
           <div className="relative mt-2">
-            <div className="h-2.5 w-full rounded-t-sm border-t border-[var(--gold)]/20
+            <div
+              className="h-2.5 w-full rounded-t-sm border-t border-[var(--gold)]/20
                             bg-gradient-to-r from-[#3A2F27]/30 via-[#6E5A3A]/40 to-[#3A2F27]/30
-                            dark:from-[#211b17] dark:via-[#3a2f27] dark:to-[#211b17]" />
-            <div className="h-5 w-full rounded-b-md border-b border-[var(--gold)]/10
+                            dark:from-[#211b17] dark:via-[#3a2f27] dark:to-[#211b17]"
+            />
+
+            <div
+              className="h-5 w-full rounded-b-md border-b border-[var(--gold)]/10
                             bg-gradient-to-r from-[#1A1410]/50 via-[#3A2F27]/60 to-[#1A1410]/50
                             shadow-2xl
-                            dark:from-[#0d0a08] dark:via-[#1a1410] dark:to-[#0d0a08]" />
+                            dark:from-[#0d0a08] dark:via-[#1a1410] dark:to-[#0d0a08]"
+            />
           </div>
 
           {/* Active details */}
-          <div className="mt-6 flex flex-col items-center justify-between gap-4 border-t
+          <div
+            className="mt-6 flex flex-col items-center justify-between gap-4 border-t
                           border-black/[0.06] pt-4
                           dark:border-white/[0.06]
-                          sm:flex-row">
+                          sm:flex-row"
+          >
             <div className="flex flex-col gap-2 text-center sm:flex-row sm:items-center sm:gap-4 sm:text-left">
               <span className="font-mono text-sm font-bold tabular-nums text-[var(--gold)]">
                 {activeProject.indexStr} / 0{primaryProjects.length}
               </span>
+
               <div>
                 <h3 className="font-serif text-lg font-bold text-[var(--ink)]">
                   {activeProject.title}
                 </h3>
+
                 <p className="font-sans text-xs text-[#5A5A5A] dark:text-[#9A9A9E]">
                   {activeProject.subtitle}
                 </p>
